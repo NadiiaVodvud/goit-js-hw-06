@@ -1,12 +1,12 @@
-const listItemEl = document.querySelector('.item');
-console.log(listItemEl);
-console.dir(listItemEl);
+const listItemsEl = document.querySelector('ul');
+console.log('Number of categories:', listItemsEl.children.length);
 
-const listItemsEl = document.querySelectorAll('.item');
-console.log('Number of categories:', listItemsEl.length);
-
-const title = document.querySelectorAll('h2');
-console.log('Category:', title.textContent);
+for (const item of listItemsEl.children) {
+  const titleEl = item.firstElementChild;
+  console.log('Category:', titleEl.textContent);
+  const itemsEl = item.lastElementChild;
+  console.log('Elements:', itemsEl.children.length);
+}
 
 // console.log(listItemEl.classList);
 // listItemEl.classList.add('js-items');

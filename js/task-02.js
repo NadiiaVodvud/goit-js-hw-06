@@ -9,13 +9,10 @@ const createItem = ingredients => {
     itemEl.textContent = ingredient;
     itemEl.classList.add('item');
 
-    // console.log(itemEl);
     return itemEl;
   });
 };
 
 const items = createItem(ingredients);
-
-// console.log(listEl);
 
 listEl.append(...items);

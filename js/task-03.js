@@ -13,6 +13,13 @@ const images = [
   },
 ];
 
+// const link = document.querySelector('link');
+// const galleryStyle = [
+//   '<style>.gallery {list-style: none; display: grid; gap: 10px; align-items: center; grid-template-columns: 1fr 1.7fr 1fr; } .gallery__picture { width: 100%; height: auto; border-radius: 5px; border-style: outset; opacity: 0.9; } .gallery__picture:hover, .gallery__picture:focus { opacity: 1; scale: 1.05; transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), scale 250ms cubic-bezier(0.4, 0, 0.2, 1);} </style>',
+// ].join('');
+
+// link.insertAdjacentHTML('afterend', galleryStyle);
+
 const list = document.querySelector('.gallery');
 
 const cardGallery = images

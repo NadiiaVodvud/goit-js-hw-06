@@ -4,8 +4,6 @@ const subValueBtn = document.querySelector('[data-action="decrement"]');
 
 let counterValue = 0;
 
-// console.log(addValueBtn);
-// console.log(subValueBtn);
 // console.log(value);
 // console.log(counterValue);
 

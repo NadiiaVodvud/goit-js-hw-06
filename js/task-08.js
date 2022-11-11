@@ -1,14 +1,19 @@
-// refs.input.addEventListener("focus", onInputFocus);
-// refs.input.addEventListener("blur", onInputBlur);
-// refs.input.addEventListener("change", onInputChange);
+const form = document.querySelector('.login-form');
 
-// function onLicenseChenge(event) {
-//   console.log(event);
-// }
+const checkEvent = event => {
+  event.preventDefault();
 
-// function onFormSubmit(event) {
-//   event.preventDefault();
-//   console.log(event);
-//   console.log(event.currentTarget);
-//   console.log('це сабміт форми без перезагрузки сторінки');
-// }
+  const {
+    elements: { email, password },
+  } = event.currentTarget;
+
+  if (email.value === '' || password.value === '') {
+    return alert('Please fill in all the fields!');
+  }
+
+  const inputData = { email: email.value, password: password.value };
+  console.log(inputData);
+  event.currentTarget.reset();
+};
+
+form.addEventListener('submit', checkEvent);
